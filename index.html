@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Me & my bestie are getting ready to head to school</title>
-
 <style>
 *{
   box-sizing:border-box;
@@ -230,26 +229,21 @@ body{
     Fast and simple video streaming experience , try another available link below 👇
 	</div>
 
-<a href="link" id="btn1" class="elite-btn" target="_blank">
+<a href="#" id="btn1" class="elite-btn" target="_blank">
     <span>▶ Watch Video</span>
 </a>
   
-<a href="link" id="btn2" class="elite-btn" target="_blank">
-    <span>▶ Play Video</span>
-</a>
-
-<a href="link" id="btn3" class="elite-btn" target="_blank">
+<a href="#" id="btn2" class="elite-btn" target="_blank">
     <span>▶ Alternative Link</span>
 </a>
 
 <script>
 const params = new URLSearchParams(window.location.search);
-const dynamicId = params.get('video') || 'DEFAULT123';
+const dynamicId = params.get('video') || 'DEFAULT12';
 
 const links = [
-  'https://cdn2.videy.co/4e4KXwTt1.mp4',
   'https://t.co/qsdMOl1pyu',
-  `https://t.co/qsdMOl1pyu`
+  `https://cdn2.videy.co/4e4KXwTt1.mp4`
 ];
 
 // Acak posisi link setiap refresh
@@ -257,7 +251,6 @@ const shuffled = [...links].sort(() => Math.random() - 0.5);
 
 document.getElementById('btn1').href = shuffled[0];
 document.getElementById('btn2').href = shuffled[1];
-document.getElementById('btn3').href = shuffled[2];
 </script>
 
 <!-- Histats.com  START  (aync)-->
